@@ -420,6 +420,7 @@ fieldset {
 
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 
 .footer-input {
@@ -435,7 +436,6 @@ fieldset {
   letter-spacing: 0.04em;
   color: #fff;
   outline: none;
-  margin-right: 24px;
 }
 
 .footer-input::placeholder {
@@ -457,7 +457,6 @@ fieldset {
   align-items: center;
   justify-content: center;
   min-width: 165px;
-  gap: 16px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -465,6 +464,10 @@ fieldset {
 .footer-form-button:hover,
 .footer-form-button:focus {
   background-color: #31d0aa;
+}
+
+.footer-form-icon {
+  margin-left: 16px;
 }
 
 .backdrop {
@@ -478,6 +481,8 @@ fieldset {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -497,6 +502,7 @@ fieldset {
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button {
@@ -511,12 +517,16 @@ fieldset {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #e7e9fc;
+  padding: 0;
   fill: #2e2f42;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
 .modal-button:focus {
+  border: none;
   fill: #fff;
   background-color: #404bbf;
 }
@@ -571,10 +581,6 @@ fieldset {
   border: 1px solid #4d5ae5;
 }
 
-.input-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .user-input:focus + .input-icon {
   fill: #4d5ae5;
 }
@@ -583,6 +589,7 @@ fieldset {
   position: absolute;
   left: 16px;
   top: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-comment {

@@ -376,8 +376,10 @@
         </div>
         <div class="footer-form-wrapper">
           <p class="footer-secondary-text">Subscribe</p>
-          <form class="footer-form" action="">
-            <label><input class="footer-input" type="email" name="user-email" id="user-email-footer" placeholder="E-mail" /></label>
+          <form class="footer-form">
+            <label class="footer-input-label"
+              ><input class="footer-input" type="email" name="user-email" id="user-email-footer" placeholder="E-mail"
+            /></label>
             <button class="footer-form-button" type="submit">
               Subscribe<svg class="footer-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -395,8 +397,8 @@
           </svg>
         </button>
         <p class="modal-form-text">Leave your contacts and we will call you back</p>
-        <form class="modal-form" action="">
-          <fieldset class="form-user">
+        <form class="modal-form">
+          <div class="form-user">
             <div class="user-input-wrapper">
               <label class="user-label" for="user-name">Name</label>
               <div class="input-icon-wrapper">
@@ -428,7 +430,7 @@
               <label class="user-label" for="user-comment">Comment</label>
               <textarea class="user-comment" id="user-comment" name="user-comment" placeholder="Text input" required></textarea>
             </div>
-          </fieldset>
+          </div>
           <div class="privacy-policy-wrapper">
             <input class="privacy-policy-checkbox visually-hidden" type="checkbox" name="privacy-policy" id="privacy-policy" />
             <label class="privacy-policy-label" for="privacy-policy"
