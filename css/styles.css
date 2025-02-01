@@ -540,10 +540,6 @@ fieldset {
   margin-bottom: 16px;
 }
 
-.form-user {
-  margin-bottom: 16px;
-}
-
 .user-input-wrapper {
   display: flex;
   flex-direction: column;
@@ -552,6 +548,10 @@ fieldset {
 
 .user-input-wrapper:not(:last-child) {
   margin-bottom: 8px;
+}
+
+.user-input-wrapper:last-child {
+  margin-bottom: 16px;
 }
 
 .user-label {
