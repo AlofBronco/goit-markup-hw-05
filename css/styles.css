@@ -549,11 +549,11 @@ fieldset {
   position: relative;
 }
 
-.user-input-wrapper:not(:last-child) {
+.user-input-wrapper {
   margin-bottom: 8px;
 }
 
-.user-input-textarea {
+.user-input-last {
   margin-bottom: 16px;
 }
 
